@@ -10,7 +10,7 @@ html{
     height: 100%;/*nos aseguramos o reafirmamos que toda la página tenga un alto de 100%*/
 }
 header {
-    background: #d9d9d9d3;
+    background: #34495e;
     width: 100%;
     position: fixed;
     z-index: 100;
@@ -18,41 +18,43 @@ header {
 .navbar{
     float: right;
 }
+#nombres{
+    font-size: 15pt;
+}
 .inicio{
     grid-area: inicio;
     background-color: #5F0F40;
-    padding: 2.5rem;
+    padding: 3rem;
 
 }
 .sobreMi{
     grid-area: sobreMi;
     background-color: #1B1819;
-    padding: 2.5rem;
-
+    padding: 3rem;
 }
 .curriculum{
     grid-area: curriculum;
     background-color: #9A031E;
-    padding: 2.5rem;
-
+    padding: 3rem;
 }
 .proyectos{
     grid-area: proyectos;
     background-color: #FB8B24;
-    padding: 2.5rem;
-
+    padding: 3rem;
 }
 .habilidades{
     grid-area: habilidades;
     background-color: #FFBD00;
-    padding: 2.5rem;
-
+    padding: 3rem;
 }
 .contactame{
     grid-area: contactame;
     background-color: #0F4C5C;
-    padding: 2.5rem;
-
+    padding: 3rem;
+}
+.exp{
+    font-size: 28pt; 
+    color: #FAF5F0;
 }
 .footer{
     grid-area: footer;
@@ -63,6 +65,11 @@ header {
 .nombre{
     font-size: 40pt;
     color: #FAF5F0;
+}
+.hab{
+    font-size: 28pt; 
+    color: #000000; 
+    text-align: center;
 }
 .ocupacion{
     font-size: 32pt;
@@ -106,7 +113,7 @@ header {
     color: #FAF5F0;
     text-align: center;
 }
-.infdatos{
+p.infdatos{
     color: #FAF5F0;
     font-size: 18pt;
     text-align: justify;
@@ -122,6 +129,11 @@ header {
 .card-title{
     font-size: 18pt;
     font-weight: 700;
+    text-align: center;
+}
+.lista{
+    text-align: left; 
+    font-size: 14pt;
 }
 .card-text{
     font-size: 14pt;
@@ -177,8 +189,82 @@ header {
     "contactame"
     "footer";
 }
-/*Para tablet*/
-@media(min-width:320px){
+/*Para celular*/
+@media only screen and (max-width:480px){
+    p.infdatos{
+        font-size: 12pt;
+    }
+    .card-title{
+        font-size: 14pt;
+    }
+    .card-text{
+        font-size: 12pt;
+    }
+    .nombre{
+        font-size: 24pt;
+    }
+    .ocupacion{
+        font-size: 18pt;
+    }
+    .desc{
+        font-size: 14pt;
+    }
+    .githubimg{
+        width: 3rem;
+        height: 3rem;
+    }
+    .github{
+        padding-right: 1rem;
+        padding-bottom: 1rem;
+    }
+    .linkedinimg{
+        width: 3rem;
+        height: 3rem;
+    }
+    .linkedin{
+        padding-right: 1rem;
+    }
+    .encabezado{
+        font-size: 24pt;
+    }
+    .exp{
+        font-size: 18pt;
+    }
+    .hab{
+        font-size: 18pt;
+    }
+    .lista{
+        font-size: 12pt;
+    }
+    .descarga{
+        width: 95px;
+        height: 35px; 
+        font-size: 10pt;
+    }
+    .inicio{
+        padding: 1rem;
+    
+    }
+    .sobreMi{
+        padding: 1rem;
+    
+    }
+    .curriculum{
+        padding: 1rem;
+    
+    }
+    .proyectos{
+        padding: 1rem;
+    
+    }
+    .habilidades{
+        padding: 1rem;
+    
+    }
+    .contactame{
+        padding: 1rem;
+    
+    }
     .gridcontainer{
         grid-template-columns: auto;
         grid-template-rows: auto auto auto auto auto auto auto;
